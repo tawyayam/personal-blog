@@ -1,0 +1,103 @@
+/* TODO Footer Stylig */
+footer {
+  padding: 50px 0;
+  background-color: var(--secondary-alt);
+}
+
+footer .main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+footer .copyright h2 {
+  font-size: 40px;
+}
+
+footer .copyright p {
+  font-size: 18px;
+}
+
+footer .copyright p span {
+  color: var(--primary-alt);
+  font-weight: bold;
+}
+
+footer .pages li {
+  border-bottom: 1px solid var(--text);
+  margin: 15px 0;
+  font-size: 18px;
+  transition: var(--transition);
+}
+
+footer .pages li a {
+  color: var(--text);
+}
+
+footer .pages li:hover {
+  padding-left: 7px;
+}
+
+footer .pages li a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f061";
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 10px;
+  color: var(--primary);
+}
+
+footer .socials {
+  text-align: center;
+}
+
+footer .socials .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+footer .socials .links a {
+  color: var(--text);
+  margin: 0 8px;
+  font-size: 18px;
+  transition: var(--transition);
+}
+
+footer .socials .links a:hover i.twitter {
+  color: #00aced;
+}
+
+footer .socials .links a:hover i.inst {
+  color: #bc2a8d;
+}
+
+footer .socials .links a:hover i.face {
+  color: #2196f3;
+}
+
+footer .socials .links a:hover i.github:hover {
+  color: #333;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  footer .main-section {
+    flex-direction: column;
+  }
+
+  footer .socials {
+    margin: 35px 0;
+  }
+
+  footer .copyright {
+    order: 3;
+  }
+}
