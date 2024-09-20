@@ -446,6 +446,7 @@ header .right-nav .search {
     display: block;
     width: fit-content;
     margin: 20px 0 100px;
+    color: #fff;
     font-weight: bold;
   }
 
